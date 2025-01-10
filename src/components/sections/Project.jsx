@@ -11,7 +11,7 @@ function Project() {
                         <h2 className="text-4xl font-bold">Projets</h2>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {[1, 2, 3].map((item) => (
+                        {[1, 2, 3, 4, 5].map((item) => (
                             <div
                                 key={item}
                                 className="group relative bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300"
