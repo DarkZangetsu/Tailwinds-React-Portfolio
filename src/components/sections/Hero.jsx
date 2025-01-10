@@ -2,6 +2,21 @@
 import { ChevronDown, Download } from "lucide-react";
 
 function Hero() {
+
+    const scrollToProjects = () => {
+        const section = document.getElementById('projets');
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
+
+    const scrollToContact = () => {
+        const section = document.getElementById('contact'); 
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    } 
     return (
         <div>
             {/* Hero Section */}
@@ -21,11 +36,11 @@ function Hero() {
                                 Spécialisé dans la création d'applications web modernes et innovantes
                             </p>
                             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                                <button className="group px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg transition-all duration-300 flex items-center gap-2">
+                                <button className="group px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg transition-all duration-300 flex items-center gap-2" onClick={scrollToProjects}>
                                     Voir mes projets
                                     <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
                                 </button>
-                                <button className="px-6 py-3 border border-blue-600 hover:bg-blue-600/10 rounded-lg transition-all duration-300">
+                                <button className="px-6 py-3 border border-blue-600 hover:bg-blue-600/10 rounded-lg transition-all duration-300" onClick={scrollToContact}>
                                     Me contacter
                                 </button>
                                 <a 

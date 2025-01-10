@@ -2,12 +2,31 @@
 import { Github, Linkedin, Mail, Phone, MapPin, ChevronUp } from 'lucide-react';
 
 const Footer = () => {
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault();
+    const element = document.querySelector(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
   };
+
+  // Navigation items with correct IDs
+  const navigationItems = [
+    { name: 'Accueil', id: 'home' },
+    { name: 'À propos', id: 'about' },
+    { name: 'Projets', id: 'projets' },
+    { name: 'Compétences', id: 'conpetences' },
+    { name: 'Contact', id: 'contact' }
+  ];
 
   return (
     <footer className="relative bg-gray-900 text-gray-300">
@@ -53,13 +72,14 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Navigation rapide</h3>
             <nav className="space-y-2">
-              {['Accueil', 'À propos', 'Projets', 'Compétences', 'Contact'].map((item) => (
+              {navigationItems.map((item) => (
                 <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
+                  key={item.name}
+                  href={`#${item.id}`}
+                  onClick={(e) => scrollToSection(e, `#${item.id}`)}
                   className="block text-gray-400 hover:text-white transition-colors"
                 >
-                  {item}
+                  {item.name}
                 </a>
               ))}
             </nav>
