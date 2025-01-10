@@ -24,7 +24,7 @@ const Footer = () => {
     { name: 'Accueil', id: 'home' },
     { name: 'À propos', id: 'about' },
     { name: 'Projets', id: 'projets' },
-    { name: 'Compétences', id: 'conpetences' },
+    { name: 'Compétences', id: 'competences' },
     { name: 'Contact', id: 'contact' }
   ];
 
