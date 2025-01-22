@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 
 import Navbar from './components/navigaiton/Navbar';
-import Hero from './components/sections/hero';
+
 import About from './components/sections/About';
 import Project from './components/sections/Project';
 import Skills from './components/sections/Skills';
 import Contact from './components/sections/Contact';
 import Footer from './components/navigaiton/Footer';
+import Hero from './components/sections/Hero';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
