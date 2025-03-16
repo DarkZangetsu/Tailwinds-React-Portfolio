@@ -55,7 +55,7 @@ function Contact() {
                                         rel="noopener noreferrer"
                                         className="text-blue-400"
                                     >
-                                        linkedin.com/in/votre-profil
+                                        linkedin.com/in/fitahiana-florent-rakotosalama
                                     </a>
                                 </div>
                             </div>
