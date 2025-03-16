@@ -9,7 +9,7 @@ function Skills() {
                 { name: 'HTML5/CSS3', progress: 90 },
                 { name: 'JavaScript', progress: 85 },
                 { name: 'React.js', progress: 88 },
-                { name: 'TypeScript', progress: 80 }
+                { name: 'TypeScript', progress: 60 }
             ]
         },
         {
@@ -17,7 +17,7 @@ function Skills() {
             icon: <Server className="w-6 h-6 text-green-400" />,
             skills: [
                 { name: 'Python', progress: 88 },
-                { name: 'Java', progress: 82 },
+                { name: 'Java', progress: 70 },
                 { name: 'PHP', progress: 85 },
                 { name: 'Node.js', progress: 87 }
             ]
