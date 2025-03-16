@@ -86,14 +86,14 @@ const Navbar = ({ activeSection }) => {
           {/* Social Icons */}
           <div className="hidden md:flex items-center gap-4">
             <a 
-              href="#" 
+              href="https://github.com/DarkZangetsu" 
               className="p-2 text-gray-300 hover:text-white rounded-lg hover:bg-gray-800/50 transition-all"
               aria-label="GitHub"
             >
               <Github className="w-5 h-5" />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/fitahiana-florent-rakotosalama/" 
               className="p-2 text-gray-300 hover:text-white rounded-lg hover:bg-gray-800/50 transition-all"
               aria-label="LinkedIn"
             >

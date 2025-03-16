@@ -14,7 +14,7 @@ function About() {
                                 <h2 className="text-4xl font-bold">À propos</h2>
                             </div>
                             <p className="text-lg text-gray-300 leading-relaxed">
-                                Développeur polyvalent maîtrisant à la fois le front-end et le back-end, capable de concevoir et implémenter des solutions complètes pour applications mobiles, web et desktop. Passionné par les nouvelles technologies et doté d'une forte capacité d'adaptation, je recherche un environnement professionnel dynamique où mettre à profit mes compétences techniques et contribuer à des projets innovants.
+                                Développeur polyvalent maîtrisant à la fois le front-end et le back-end, capable de concevoir et implémenter des solutions complètes pour applications mobiles, web et desktop.
                             </p>
                             <div className="space-y-4">
                                 <div className="flex items-center gap-4">

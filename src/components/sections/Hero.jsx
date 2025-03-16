@@ -30,7 +30,7 @@ function Hero() {
                                 Fitahiana Florent
                             </h1>
                             <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                                Développeur Full Stack
+                                Développeur
                             </h2>
                             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">
                                 Spécialisé dans la création d'applications web et mobile modernes et innovantes

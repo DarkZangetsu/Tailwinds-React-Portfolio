@@ -48,18 +48,18 @@ const Footer = () => {
               Fitahiana Florent
             </h3>
             <p className="text-gray-400 max-w-sm">
-              Développeur Full Stack passionné par la création d'applications web et mobile modernes et innovantes.
+              Développeur passionné par la création d'applications web et mobile modernes et innovantes.
             </p>
             <div className="flex space-x-4">
               <a 
-                href="#" 
+                href="https://github.com/DarkZangetsu" 
                 className="p-2 text-gray-400 hover:text-white rounded-lg hover:bg-gray-800 transition-all"
                 aria-label="GitHub"
               >
                 <Github className="w-5 h-5" />
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/fitahiana-florent-rakotosalama/" 
                 className="p-2 text-gray-400 hover:text-white rounded-lg hover:bg-gray-800 transition-all"
                 aria-label="LinkedIn"
               >
