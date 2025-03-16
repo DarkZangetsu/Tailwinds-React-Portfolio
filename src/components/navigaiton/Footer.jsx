@@ -48,7 +48,7 @@ const Footer = () => {
               Fitahiana Florent
             </h3>
             <p className="text-gray-400 max-w-sm">
-              Développeur Full Stack passionné par la création d'applications web modernes et innovantes.
+              Développeur Full Stack passionné par la création d'applications web et mobile modernes et innovantes.
             </p>
             <div className="flex space-x-4">
               <a 

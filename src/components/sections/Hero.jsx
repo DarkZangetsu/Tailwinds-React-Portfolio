@@ -33,7 +33,7 @@ function Hero() {
                                 Développeur Full Stack
                             </h2>
                             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">
-                                Spécialisé dans la création d'applications web modernes et innovantes
+                                Spécialisé dans la création d'applications web et mobile modernes et innovantes
                             </p>
                             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                                 <button className="group px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg transition-all duration-300 flex items-center gap-2" onClick={scrollToProjects}>
