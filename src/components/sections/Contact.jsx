@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, FileDown, Download } from "lucide-react";
 
 function Contact() {
     return (
@@ -57,6 +57,21 @@ function Contact() {
                                     >
                                         linkedin.com/in/fitahiana-florent-rakotosalama
                                     </a>
+                                </div>
+                            </div>
+                            
+                            {/* Téléchargement CV */}
+                            <div className="flex items-center gap-4">
+                                <FileDown className="w-6 h-6 text-purple-600" />
+                                <div>
+                                    <a 
+                                    href="pdf/cv.pdf" 
+                                    download
+                                    className="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg transition-all duration-300 flex items-center gap-2"
+                                >
+                                    <Download className="w-4 h-4" />
+                                    Télécharger CV
+                                </a>
                                 </div>
                             </div>
                         </div>
