@@ -1,4 +1,4 @@
-import { Code, Globe, Database, Wrench, Monitor, Server, Command, Activity, Layout } from "lucide-react";
+import { Code, Monitor, Server, Layout } from "lucide-react";
 
 function Skills() {
     const skillCategories = [
@@ -6,86 +6,43 @@ function Skills() {
             name: 'Front-end',
             icon: <Monitor className="w-6 h-6 text-blue-400" />,
             skills: [
-                { name: 'HTML5/CSS3', progress: 90 },
-                { name: 'JavaScript', progress: 85 },
-                { name: 'React.js', progress: 88 },
-                { name: 'TypeScript', progress: 60 }
+                { name: 'HTML5', icon: "images/skills/html.png" },
+                { name: 'CSS3', icon: "images/skills/css.png" },
+                { name: 'JavaScript', icon: "images/skills/js.png" },
+                { name: 'React.js', icon: "images/skills/react.png" },
+                { name: 'TypeScript', icon: "images/skills/typescript.png" }
             ]
         },
         {
             name: 'Back-end',
             icon: <Server className="w-6 h-6 text-green-400" />,
             skills: [
-                { name: 'Python', progress: 88 },
-                { name: 'Java', progress: 70 },
-                { name: 'PHP', progress: 85 },
-                { name: 'Node.js', progress: 87 }
+                { name: 'Python', icon: "/images/skills/python.png" },
+                { name: 'Java', icon: "images/skills/java.png" },
+                { name: 'PHP', icon: "images/skills/php.png" },
+                { name: 'Node.js', icon: "images/skills/node.png" }
             ]
         },
         {
             name: 'Frameworks',
             icon: <Layout className="w-6 h-6 text-purple-400" />,
             skills: [
-                { name: 'Symfony', progress: 85 },
-                { name: 'Django', progress: 88 },
-                { name: 'Express.js', progress: 86 },
-                { name: 'Next.js', progress: 84 },
-                { name: 'Flutter', progress: 82 }
+                { name: 'Symfony', icon: "images/skills/symfony.png" },
+                { name: 'Django', icon: "images/skills/django.png" },
+                { name: 'Express.js', icon: "images/skills/express.png" },
+                { name: 'Next.js', icon: "images/skills/next.png" },
+                { name: 'Flutter', icon: "images/skills/flutter.png" }
             ]
         },
-        {
-            name: 'Base de données',
-            icon: <Database className="w-6 h-6 text-yellow-400" />,
-            skills: [
-                { name: 'MongoDB', progress: 85 },
-                { name: 'SQL Server', progress: 82 },
-                { name: 'PostgreSQL', progress: 88 },
-                { name: 'Supabase', progress: 80 }
-            ]
-        },
-        {
-            name: 'APIs',
-            icon: <Globe className="w-6 h-6 text-red-400" />,
-            skills: [
-                { name: 'REST API', progress: 90 },
-                { name: 'GraphQL', progress: 85 }
-            ]
-        },
-        {
-            name: 'Outils',
-            icon: <Wrench className="w-6 h-6 text-indigo-400" />,
-            skills: [
-                { name: 'Git', progress: 88 },
-                { name: 'Docker', progress: 82 },
-                { name: 'Azure DevOps', progress: 78 },
-                { name: 'Bitbucket', progress: 80 }
-            ]
-        },
-        {
-            name: 'Méthodologie',
-            icon: <Activity className="w-6 h-6 text-orange-400" />,
-            skills: [
-                { name: 'Agile', progress: 85 },
-                { name: '2TUP', progress: 78 }
-            ]
-        },
-        {
-            name: 'Modélisation',
-            icon: <Command className="w-6 h-6 text-cyan-400" />,
-            skills: [
-                { name: 'UML', progress: 84 },
-                { name: 'Merise', progress: 80 }
-            ]
-        }
     ];
 
     return (
         <div>
-            <section id="competences" className="min-h-screen py-20 px-4 bg-gray-800/50">
+            <section id="skills" className="min-h-screen py-20 px-4 bg-gray-800/50">
                 <div className="max-w-6xl mx-auto">
                     <div className="flex items-center gap-4 mb-12">
                         <Code className="w-8 h-8 text-blue-500" />
-                        <h2 className="text-4xl font-bold">Compétences</h2>
+                        <h2 className="text-4xl font-bold">Skills</h2>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {skillCategories.map((category) => (
@@ -94,19 +51,15 @@ function Skills() {
                                     {category.icon}
                                     <h3 className="text-xl font-bold">{category.name}</h3>
                                 </div>
-                                <div className="space-y-6">
+                                <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
                                     {category.skills.map((skill) => (
-                                        <div key={skill.name} className="space-y-2">
-                                            <div className="flex justify-between items-center">
-                                                <span>{skill.name}</span>
-                                                <span className="text-blue-400">{skill.progress}%</span>
-                                            </div>
-                                            <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
-                                                <div
-                                                    className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-500"
-                                                    style={{ width: `${skill.progress}%` }}
-                                                ></div>
-                                            </div>
+                                        <div key={skill.name} className="flex flex-col items-center justify-center">
+                                            <img 
+                                                src={skill.icon} 
+                                                alt={skill.name} 
+                                                className="w-12 h-12 mb-2"
+                                                title={skill.name}
+                                            />
                                         </div>
                                     ))}
                                 </div>
