@@ -9,58 +9,61 @@ function Project() {
       id: 1,
       title: "Application Mobile de Constat d'État des Lieux",
       description: "Application mobile pour tablette permettant de réaliser des constats d'état des lieux avec intégration de l'API MaDactylo.",
-      image: "projet1.jpg",
+      image: "constat.png",
       tags: ["Flutter", "API Integration", "Mobile"],
       type: ["mobile"],
-      link: "https://example.com/projet1"
     },
     {
       id: 2,
-      title: "Plateforme Web de Gestion d'Inventaire",
-      description: "Plateforme web de visionnage et de gestion d'inventaire avec intégration des APIs Zabbix et GLPI.",
-      image: "projet2.jpg",
+      title: "Plateforme Web de Gestion d'Inventaire et de revue d'infrastructure",
+      description: "Plateforme web de visionnage et de gestion d'inventaire et de revue d'infrastructure avec intégration des APIs Zabbix et GLPI.",
+      image: "zabbix.png",
       tags: ["Django", "React Vite", "Tailwind CSS", "GraphQL", "API Integration"],
       type: ["web", "frontend", "backend"],
-      link: "https://example.com/projet2"
     },
     {
       id: 3,
-      title: "Application Mobile Comptah",
-      description: "Application mobile multi-plateforme de gestion de caisse.",
-      image: "projet3.jpg",
-      tags: ["Flutter", "Supabase"],
-      type: ["mobile"]
-      // Pas de lien pour ce projet
+      title: "Plateforme Web de Gestion des Ventes Adesolaire-V",
+      description: "Interface centralisée pour la visualisation et l'analyse des données de ventes entre Salesforce et l'application mobile, avec tableaux de bord personnalisables et rapports en temps réel.",
+      image: "lemadio.png",
+      tags: ["Django", "React Vite", "Tailwind CSS", "GraphQL", "API Integration"],
+      type: ["web", "frontend", "backend"],
     },
     {
       id: 4,
-      title: "Site Web BIONEXX",
-      description: "Site web pour l'entreprise BIONEXX en collaboration avec un développeur Front-end et l'équipe IT.",
-      image: "projet4.jpg",
-      tags: ["Symfony", "Backend"],
-      type: ["web", "backend"],
-      link: "https://bionexx.com"
+      title: "Application Mobile Comptah",
+      description: "Application mobile multi-plateforme de gestion de caisse.",
+      image: "comptah.png",
+      tags: ["Flutter", "Supabase"],
+      type: ["mobile"]
     },
     {
       id: 5,
-      title: "CaisseMobilePro",
-      description: "Application mobile de gestion de caisse pour l'Établissement RALAIVAO.",
-      image: "projet5.jpg",
-      tags: ["Flutter", "Mobile"],
-      type: ["mobile"]
-      // Pas de lien pour ce projet
+      title: "Site Web BIONEXX",
+      description: "Site web pour l'entreprise BIONEXX en collaboration avec un développeur Front-end et l'équipe IT.",
+      image: "bionexx.png",
+      tags: ["Symfony", "Backend"],
+      type: ["web", "backend"],
     },
     {
       id: 6,
-      title: "Mon Portfolio",
-      description: "Portfolio personnel mettant en valeur mes projets et compétences avec une interface moderne et réactive.",
-      image: "projet6.jpg",
-      tags: ["React Vite", "Tailwind CSS", "Vercel"],
-      type: ["web", "frontend"],
-      link: "https://portfolio.example.com"
+      title: "CaisseMobilePro",
+      description: "Application mobile de gestion de caisse pour l'Établissement RALAIVAO.",
+      image: "ets.jpg",
+      tags: ["Flutter", "Mobile"],
+      type: ["mobile"]
     },
     {
       id: 7,
+      title: "Mon Portfolio",
+      description: "Portfolio personnel mettant en valeur mes projets et compétences avec une interface moderne et réactive.",
+      image: "portfolio.png",
+      tags: ["React Vite", "Tailwind CSS", "Vercel"],
+      type: ["web", "frontend"],
+      link: "https://tailwinds-react-portfolio.vercel.app/"
+    },
+    {
+      id: 8,
       title: "Stream Youjo Senki",
       description: "Plateforme de streaming dédiée à l'anime Youjo Senki avec lecture de vidéos et informations sur la série.",
       image: "youjo.png",
@@ -69,22 +72,21 @@ function Project() {
       link: "https://stream-youjo-senki-next-js-app.vercel.app/"
     },
     {
-      id: 8,
+      id: 9,
       title: "AniInfo",
       description: "Site d'information sur les animés utilisant les APIs de MyAnimeList et Jikan.moe pour fournir des détails complets et à jour.",
-      image: "projet8.jpg",
+      image: "aniInfo.png",
       tags: ["Next.js", "Vercel", "API Integration"],
       type: ["web", "frontend"],
       link: "https://ani-info-psi.vercel.app/"
     },
     {
-      id: 9,
+      id: 10,
       title: "MedicApp",
       description: "Application mobile de gestion de rendez-vous médicaux permettant aux patients de prendre et suivre leurs consultations.",
-      image: "projet9.jpg",
+      image: "medic.png",
       tags: ["React Native", "Expo", "Supabase", "Mobile"],
       type: ["mobile"]
-      // Pas de lien pour ce projet
     }
   ];
 

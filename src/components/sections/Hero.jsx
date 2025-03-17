@@ -58,7 +58,7 @@ function Hero() {
                         <div className="w-64 h-64 md:w-80 md:h-80 relative animate-fade-in">
                             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full opacity-20 blur-lg"></div>
                             <img
-                                src="/api/placeholder/320/320"
+                                src="images/hero/hero.png"
                                 alt="Profile"
                                 className="relative z-10 w-full h-full object-cover rounded-full border-4 border-blue-400/30"
                             />
