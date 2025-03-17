@@ -44,7 +44,7 @@ function Hero() {
                                     Me contacter
                                 </button>
                                 <a 
-                                    href="/path-to-your-cv.pdf" 
+                                    href="pdf/cv.pdf" 
                                     download
                                     className="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg transition-all duration-300 flex items-center gap-2"
                                 >
