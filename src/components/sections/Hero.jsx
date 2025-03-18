@@ -1,10 +1,9 @@
-/* eslint-disable react/no-unescaped-entities */
 import { ChevronDown, Download } from "lucide-react";
 
 function Hero() {
 
     const scrollToProjects = () => {
-        const section = document.getElementById('projets');
+        const section = document.getElementById('projects');
         if (section) {
           section.scrollIntoView({ behavior: 'smooth' });
         }
@@ -30,18 +29,18 @@ function Hero() {
                                 Fitahiana Florent
                             </h1>
                             <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                                Développeur
+                                Developer
                             </h2>
                             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">
-                                Spécialisé dans la création d'applications web et mobile modernes et innovantes
+                                Specialized in creating modern and innovative web and mobile applications
                             </p>
                             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                                 <button className="group px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg transition-all duration-300 flex items-center gap-2" onClick={scrollToProjects}>
-                                    Voir mes projets
+                                    View my projects
                                     <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
                                 </button>
                                 <button className="px-6 py-3 border border-blue-600 hover:bg-blue-600/10 rounded-lg transition-all duration-300" onClick={scrollToContact}>
-                                    Me contacter
+                                    Contact me
                                 </button>
                                 <a 
                                     href="pdf/cv.pdf" 
@@ -49,7 +48,7 @@ function Hero() {
                                     className="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg transition-all duration-300 flex items-center gap-2"
                                 >
                                     <Download className="w-4 h-4" />
-                                    Télécharger CV
+                                    Download CV
                                 </a>
                             </div>
                         </div>

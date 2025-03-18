@@ -1,4 +1,4 @@
-import { Code, Monitor, Server, Layout } from "lucide-react";
+import { Code, Monitor, Server, Layout, DatabaseIcon } from "lucide-react";
 
 function Skills() {
     const skillCategories = [
@@ -29,9 +29,19 @@ function Skills() {
             skills: [
                 { name: 'Symfony', icon: "images/skills/symfony.png" },
                 { name: 'Django', icon: "images/skills/django.png" },
-                { name: 'Express.js', icon: "images/skills/express.png" },
+                { name: 'Express.js', icon: "images/skills/expressjs.png" },
                 { name: 'Next.js', icon: "images/skills/next.png" },
                 { name: 'Flutter', icon: "images/skills/flutter.png" }
+            ]
+        },
+        {
+            name: 'Databases',
+            icon: <DatabaseIcon className="w-6 h-6 text-yellow-400" />,
+            skills: [
+                { name: 'MongoDB', icon: "images/skills/mongodb.png" },
+                { name: 'SQL Server', icon: "images/skills/sqlserver.png" },
+                { name: 'PostgreSQL', icon: "images/skills/postgresql.png" },
+                { name: 'Supabase', icon: "images/skills/supabase.png" }
             ]
         },
     ];

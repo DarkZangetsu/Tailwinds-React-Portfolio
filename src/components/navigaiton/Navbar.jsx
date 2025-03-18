@@ -16,17 +16,17 @@ const Navbar = ({ activeSection }) => {
   }, []);
 
   const navLinks = [
-    { href: '#home', label: 'Accueil' },
-    { href: '#about', label: 'À propos' },
-    { href: '#projets', label: 'Projets' },
-    { href: '#competences', label: 'Compétences' },
+    { href: '#home', label: 'Home' },
+    { href: '#about', label: 'About' },
+    { href: '#projects', label: 'Projects' },
+    { href: '#skills', label: 'Skills' },
     { href: '#contact', label: 'Contact' },
   ];
 
   const scrollToSection = (href) => {
     setIsOpen(false);
     const element = document.querySelector(href);
-    const offset = isScrolled ? 60 : 80; // Ajuster l'offset en fonction de l'état de défilement
+    const offset = isScrolled ? 60 : 80; // Adjust offset based on scroll state
     const bodyRect = document.body.getBoundingClientRect().top;
     const elementRect = element.getBoundingClientRect().top;
     const elementPosition = elementRect - bodyRect;
@@ -49,8 +49,8 @@ const Navbar = ({ activeSection }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`flex items-center justify-between ${
           isScrolled 
-            ? 'md:h-16 h-12' // Hauteur encore plus réduite en mode mobile lors du défilement
-            : 'md:h-20 h-16' // Hauteur mobile réduite par défaut
+            ? 'md:h-16 h-12' // Even more reduced height in mobile mode when scrolling
+            : 'md:h-20 h-16' // Default reduced mobile height
         }`}>
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -62,7 +62,7 @@ const Navbar = ({ activeSection }) => {
               }}
               className={`font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 ${
                 isScrolled
-                  ? 'text-lg md:text-2xl' // Taille réduite en mode mobile lors du défilement
+                  ? 'text-lg md:text-2xl' // Reduced size in mobile mode when scrolling
                   : 'text-xl md:text-2xl'
               }`}
             >
@@ -130,9 +130,9 @@ const Navbar = ({ activeSection }) => {
             : 'opacity-0 -translate-y-4 pointer-events-none'
         }`}
         style={{
-          maxHeight: 'calc(100vh - 60px)',  // Limite la hauteur du menu
-          overflowY: 'auto',                // Permet le défilement si nécessaire
-          top: isScrolled ? '48px' : '64px' // Position dynamique en fonction de la hauteur de la barre
+          maxHeight: 'calc(100vh - 60px)',  // Limit menu height
+          overflowY: 'auto',                // Allow scrolling if necessary
+          top: isScrolled ? '48px' : '64px' // Dynamic position based on bar height
         }}
       >
         <div className="px-2 py-1 bg-gray-900/95 backdrop-blur-lg">

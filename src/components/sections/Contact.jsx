@@ -16,28 +16,28 @@ function Contact() {
                                 <Mail className="w-6 h-6 text-blue-400" />
                                 <div>
                                     <h3 className="text-lg font-medium">Email</h3>
-                                    <a href="mailto:votre.email@exemple.com" className="text-blue-400">
+                                    <a href="mailto:rakotosalamafitahiana@gmail.com" className="text-blue-400">
                                         rakotosalamafitahiana@gmail.com
                                     </a>
                                 </div>
                             </div>
                             
-                            {/* Téléphone */}
+                            {/* Phone */}
                             <div className="flex items-center gap-4">
                                 <Phone className="w-6 h-6 text-green-400" />
                                 <div>
-                                    <h3 className="text-lg font-medium">Téléphone</h3>
-                                    <a href="tel:+33600000000" className="text-green-400">
+                                    <h3 className="text-lg font-medium">Phone</h3>
+                                    <a href="tel:+261343172081" className="text-green-400">
                                         +261 34 31 720 81
                                     </a>
                                 </div>
                             </div>
                             
-                            {/* Adresse */}
+                            {/* Address */}
                             <div className="flex items-center gap-4">
                                 <MapPin className="w-6 h-6 text-purple-400" />
                                 <div>
-                                    <h3 className="text-lg font-medium">Adresse</h3>
+                                    <h3 className="text-lg font-medium">Address</h3>
                                     <p className="text-gray-300">
                                         Fianarantsoa 301, Madagascar.
                                     </p>
@@ -60,7 +60,7 @@ function Contact() {
                                 </div>
                             </div>
                             
-                            {/* Téléchargement CV */}
+                            {/* Download CV */}
                             <div className="flex items-center gap-4">
                                 <FileDown className="w-6 h-6 text-purple-600" />
                                 <div>
@@ -70,7 +70,7 @@ function Contact() {
                                     className="px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg transition-all duration-300 flex items-center gap-2"
                                 >
                                     <Download className="w-4 h-4" />
-                                    Télécharger CV
+                                    Download CV
                                 </a>
                                 </div>
                             </div>

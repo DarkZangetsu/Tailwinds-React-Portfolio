@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { Github, Linkedin, Mail, Phone, MapPin, ChevronUp } from 'lucide-react';
 
 const Footer = () => {
@@ -21,10 +20,10 @@ const Footer = () => {
 
   // Navigation items with correct IDs
   const navigationItems = [
-    { name: 'Accueil', id: 'home' },
-    { name: 'À propos', id: 'about' },
-    { name: 'Projets', id: 'projets' },
-    { name: 'Compétences', id: 'competences' },
+    { name: 'Home', id: 'home' },
+    { name: 'About', id: 'about' },
+    { name: 'Projects', id: 'projects' },
+    { name: 'Skills', id: 'skills' },
     { name: 'Contact', id: 'contact' }
   ];
 
@@ -34,7 +33,7 @@ const Footer = () => {
       <button
         onClick={scrollToTop}
         className="absolute -top-5 left-1/2 -translate-x-1/2 w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors group"
-        aria-label="Retour en haut"
+        aria-label="Back to top"
       >
         <ChevronUp className="w-6 h-6 group-hover:-translate-y-1 transition-transform" />
       </button>
@@ -48,7 +47,7 @@ const Footer = () => {
               Fitahiana Florent
             </h3>
             <p className="text-gray-400 max-w-sm">
-              Développeur passionné par la création d'applications web et mobile modernes et innovantes.
+              Developer passionate about creating modern and innovative web and mobile applications.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -70,7 +69,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Navigation rapide</h3>
+            <h3 className="text-lg font-semibold">Quick Navigation</h3>
             <nav className="space-y-2">
               {navigationItems.map((item) => (
                 <a
@@ -89,11 +88,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Contact</h3>
             <div className="space-y-3">
-              <a href="mailto:contact@example.com" className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors">
+              <a href="mailto:rakotosalamafitahiana@gmail.com" className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors">
                 <Mail className="w-5 h-5" />
                 <span>rakotosalamafitahiana@gmail.com</span>
               </a>
-              <a href="tel:+33600000000" className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors">
+              <a href="tel:+261343172081" className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors">
                 <Phone className="w-5 h-5" />
                 <span>+261 34 31 720 81</span>
               </a>
@@ -108,14 +107,14 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="border-t border-gray-800 py-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} Fitahiana FLorent. Tous droits réservés.
+            © {new Date().getFullYear()} Fitahiana Florent. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-gray-400 hover:text-white transition-colors">
-              Mentions légales
+              Legal Notice
             </a>
             <a href="#" className="text-gray-400 hover:text-white transition-colors">
-              Politique de confidentialité
+              Privacy Policy
             </a>
           </div>
         </div>

@@ -7,40 +7,40 @@ function Project() {
   const projects = [
     {
       id: 1,
-      title: "Application Mobile de Constat d'État des Lieux",
-      description: "Application mobile pour tablette permettant de réaliser des constats d'état des lieux avec intégration de l'API MaDactylo.",
+      title: "Property Inspection Mobile Application",
+      description: "Mobile tablet application for conducting property inspections with MaDactylo API integration.",
       image: "constat.png",
       tags: ["Flutter", "API Integration", "Mobile"],
       type: ["mobile"],
     },
     {
       id: 2,
-      title: "Plateforme Web de Gestion d'Inventaire et de revue d'infrastructure",
-      description: "Plateforme web de visionnage et de gestion d'inventaire et de revue d'infrastructure avec intégration des APIs Zabbix et GLPI.",
+      title: "Inventory and Infrastructure Review Web Platform",
+      description: "Web platform for viewing and managing inventory and infrastructure reviews with Zabbix and GLPI API integration.",
       image: "zabbix.png",
       tags: ["Django", "React Vite", "Tailwind CSS", "GraphQL", "API Integration"],
       type: ["web", "frontend", "backend"],
     },
     {
       id: 3,
-      title: "Plateforme Web de Gestion des Ventes Adesolaire-V",
-      description: "Interface centralisée pour la visualisation et l'analyse des données de ventes entre Salesforce et l'application mobile, avec tableaux de bord personnalisables et rapports en temps réel.",
+      title: "Adesolaire-V Sales Management Web Platform",
+      description: "Centralized interface for visualization and analysis of sales data between Salesforce and the mobile application, with customizable dashboards and real-time reports.",
       image: "lemadio.png",
       tags: ["Django", "React Vite", "Tailwind CSS", "GraphQL", "API Integration"],
       type: ["web", "frontend", "backend"],
     },
     {
       id: 4,
-      title: "Application Mobile Comptah",
-      description: "Application mobile multi-plateforme de gestion de caisse.",
+      title: "Comptah Mobile Application",
+      description: "Cross-platform mobile cash register management application.",
       image: "comptah.png",
       tags: ["Flutter", "Supabase"],
       type: ["mobile"]
     },
     {
       id: 5,
-      title: "Site Web BIONEXX",
-      description: "Site web pour l'entreprise BIONEXX en collaboration avec un développeur Front-end et l'équipe IT.",
+      title: "BIONEXX Website",
+      description: "Website for BIONEXX company in collaboration with a Front-end developer and the IT team.",
       image: "bionexx.png",
       tags: ["Symfony", "Backend"],
       type: ["web", "backend"],
@@ -48,15 +48,15 @@ function Project() {
     {
       id: 6,
       title: "CaisseMobilePro",
-      description: "Application mobile de gestion de caisse pour l'Établissement RALAIVAO.",
+      description: "Mobile cash register management application for RALAIVAO Establishment.",
       image: "ets.jpg",
       tags: ["Flutter", "Mobile"],
       type: ["mobile"]
     },
     {
       id: 7,
-      title: "Mon Portfolio",
-      description: "Portfolio personnel mettant en valeur mes projets et compétences avec une interface moderne et réactive.",
+      title: "My Portfolio",
+      description: "Personal portfolio showcasing my projects and skills with a modern and responsive interface.",
       image: "portfolio.png",
       tags: ["React Vite", "Tailwind CSS", "Vercel"],
       type: ["web", "frontend"],
@@ -65,7 +65,7 @@ function Project() {
     {
       id: 8,
       title: "Stream Youjo Senki",
-      description: "Plateforme de streaming dédiée à l'anime Youjo Senki avec lecture de vidéos et informations sur la série.",
+      description: "Streaming platform dedicated to the Youjo Senki anime with video playback and series information.",
       image: "youjo.png",
       tags: ["Next.js", "Vercel", "API Integration"],
       type: ["web", "frontend"],
@@ -74,7 +74,7 @@ function Project() {
     {
       id: 9,
       title: "AniInfo",
-      description: "Site d'information sur les animés utilisant les APIs de MyAnimeList et Jikan.moe pour fournir des détails complets et à jour.",
+      description: "Anime information site using MyAnimeList and Jikan.moe APIs to provide comprehensive and up-to-date details.",
       image: "aniInfo.png",
       tags: ["Next.js", "Vercel", "API Integration"],
       type: ["web", "frontend"],
@@ -83,7 +83,7 @@ function Project() {
     {
       id: 10,
       title: "MedicApp",
-      description: "Application mobile de gestion de rendez-vous médicaux permettant aux patients de prendre et suivre leurs consultations.",
+      description: "Mobile application for medical appointment management allowing patients to schedule and track their consultations.",
       image: "medic.png",
       tags: ["React Native", "Expo", "Supabase", "Mobile"],
       type: ["mobile"]
@@ -163,11 +163,11 @@ function Project() {
   return (
     <div>
       {/* Projects Section */}
-      <section id="projets" className="min-h-screen py-20 px-4 bg-gray-900">
+      <section id="projects" className="min-h-screen py-20 px-4 bg-gray-900">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-4 mb-12">
             <Briefcase className="w-8 h-8 text-blue-500" />
-            <h2 className="text-4xl font-bold text-white">Projets</h2>
+            <h2 className="text-4xl font-bold text-white">Projects</h2>
           </div>
           
           {/* Filter Buttons */}
@@ -178,7 +178,7 @@ function Project() {
                 activeFilter === "all" ? "bg-blue-600 text-white" : "bg-gray-800 text-gray-300 hover:bg-gray-700"
               }`}
             >
-              Tous
+              All
             </button>
             <button
               onClick={() => setActiveFilter("web")}
@@ -262,7 +262,7 @@ function Project() {
                         rel="noopener noreferrer"
                         className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-2"
                       >
-                        Voir plus <ExternalLink className="w-4 h-4" />
+                        See more <ExternalLink className="w-4 h-4" />
                       </a>
                     </div>
                   )}
