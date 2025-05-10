@@ -29,39 +29,7 @@ function Project() {
       tags: ["Django", "React Vite", "Tailwind CSS", "GraphQL", "API Integration"],
       type: ["web", "frontend", "backend"],
     },
-    {
-      id: 4,
-      title: "Comptah Mobile Application",
-      description: "Cross-platform mobile cash register management application.",
-      image: "comptah.png",
-      tags: ["Flutter", "Supabase"],
-      type: ["mobile"]
-    },
-    {
-      id: 5,
-      title: "BIONEXX Website",
-      description: "Website for BIONEXX company in collaboration with a Front-end developer and the IT team.",
-      image: "bionexx.png",
-      tags: ["Symfony", "Backend"],
-      type: ["web", "backend"],
-    },
-    {
-      id: 6,
-      title: "CaisseMobilePro",
-      description: "Mobile cash register management application for RALAIVAO Establishment.",
-      image: "ets.jpg",
-      tags: ["Flutter", "Mobile"],
-      type: ["mobile"]
-    },
-    {
-      id: 7,
-      title: "My Portfolio",
-      description: "Personal portfolio showcasing my projects and skills with a modern and responsive interface.",
-      image: "portfolio.png",
-      tags: ["React Vite", "Tailwind CSS", "Vercel"],
-      type: ["web", "frontend"],
-      link: "https://tailwinds-react-portfolio.vercel.app/"
-    },
+    
     {
       id: 8,
       title: "Stream Youjo Senki",
@@ -71,23 +39,6 @@ function Project() {
       type: ["web", "frontend"],
       link: "https://stream-youjo-senki-next-js-app.vercel.app/"
     },
-    {
-      id: 9,
-      title: "AniInfo",
-      description: "Anime information site using MyAnimeList and Jikan.moe APIs to provide comprehensive and up-to-date details.",
-      image: "aniInfo.png",
-      tags: ["Next.js", "Vercel", "API Integration"],
-      type: ["web", "frontend"],
-      link: "https://ani-info-psi.vercel.app/"
-    },
-    {
-      id: 10,
-      title: "MedicApp",
-      description: "Mobile application for medical appointment management allowing patients to schedule and track their consultations.",
-      image: "medic.png",
-      tags: ["React Native", "Expo", "Supabase", "Mobile"],
-      type: ["mobile"]
-    }
   ];
 
   // Function to get image path with fallback
