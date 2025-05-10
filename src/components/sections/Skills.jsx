@@ -8,9 +8,9 @@ function Skills() {
         {
             name: 'Frameworks',
             icon: <Layout className="w-6 h-6 text-purple-400" />,
-            description: "Frameworks et bibliothèques que j'utilise pour développer des applications robustes et efficaces",
+            description: "Frameworks and libraries I use to develop robust and efficient applications",
             skills: [
-                { name: 'Symfony', icon: "images/skills/symfony.png" },
+                 { name: 'Symfony', icon: "images/skills/symfony.png" },
                 { name: 'Django', icon: "images/skills/django.png" },
                 { name: 'Express.js', icon: "images/skills/expressjs.png" },
                 { name: 'Next.js', icon: "images/skills/next.png" },
@@ -20,7 +20,7 @@ function Skills() {
         {
             name: 'Databases',
             icon: <Database className="w-6 h-6 text-yellow-400" />,
-            description: "Systèmes de bases de données que j'utilise pour stocker et gérer efficacement les données",
+            description: "Database systems I use to efficiently store and manage data",
             skills: [
                 { name: 'MongoDB', icon: "images/skills/mongodb.png" },
                 { name: 'SQL Server', icon: "images/skills/sqlserver.png" },
@@ -29,7 +29,7 @@ function Skills() {
             ]
         },
     ];
-
+    
     return (
         <div className="bg-gradient-to-b from-gray-900 to-gray-800">
             <section id="skills" className="min-h-screen py-24 px-6">
@@ -43,7 +43,7 @@ function Skills() {
                         {/* Sidebar avec les catégories */}
                         <div className="lg:col-span-4">
                             <div className="bg-gray-800/80 backdrop-blur-lg p-6 rounded-2xl shadow-xl border border-gray-700">
-                                <h3 className="text-xl font-bold mb-6 text-gray-200">Catégories</h3>
+                                <h3 className="text-xl font-bold mb-6 text-gray-200">Categories</h3>
                                 <div className="space-y-3">
                                     {skillCategories.map((category, index) => (
                                         <div 
