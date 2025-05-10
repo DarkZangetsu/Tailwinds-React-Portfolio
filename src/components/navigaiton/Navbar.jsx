@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from 'react';
-import { Github, Linkedin, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Navbar = ({ activeSection }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -161,14 +161,22 @@ const Navbar = ({ activeSection }) => {
               className="p-1 text-gray-300 hover:text-white rounded-lg hover:bg-gray-800/50 transition-all"
               aria-label="GitHub"
             >
-              <Github className="w-4 h-4" />
+              <img
+                src="/images/github.png"
+                alt="GitHub"
+                className="w-4 h-4"
+              />
             </a>
             <a
               href="https://www.linkedin.com/in/fitahiana-florent-rakotosalama/"
               className="p-1 text-gray-300 hover:text-white rounded-lg hover:bg-gray-800/50 transition-all"
               aria-label="LinkedIn"
             >
-              <Linkedin className="w-4 h-4" />
+              <img
+                src="/images/linkedin.png"
+                alt="LinkedIn"
+                className="w-4 h-4"
+              />
             </a>
           </div>
         </div>
