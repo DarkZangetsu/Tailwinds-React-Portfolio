@@ -1,4 +1,4 @@
-import {Mail, Phone, MapPin, ChevronUp } from 'lucide-react';
+import { ChevronUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollToSection = (e, sectionId) => {
@@ -50,27 +50,27 @@ const Footer = () => {
               Developer passionate about creating modern and innovative web and mobile applications.
             </p>
             <div className="flex space-x-4">
-              <a 
-                href="https://github.com/DarkZangetsu" 
+              <a
+                href="https://github.com/DarkZangetsu"
                 className="p-2 text-gray-400 hover:text-white rounded-lg hover:bg-gray-800 transition-all"
                 aria-label="GitHub"
               >
                 <img
-                src="/images/github.png"
-                alt="GitHub"
-                className="w-5 h-5"
-              />
+                  src="/images/github.png"
+                  alt="GitHub"
+                  className="w-5 h-5"
+                />
               </a>
-              <a 
-                href="https://www.linkedin.com/in/fitahiana-florent-rakotosalama/" 
+              <a
+                href="https://www.linkedin.com/in/fitahiana-florent-rakotosalama/"
                 className="p-2 text-gray-400 hover:text-white rounded-lg hover:bg-gray-800 transition-all"
                 aria-label="LinkedIn"
               >
                 <img
-                src="/images/linkedin.png"
-                alt="LinkedIn"
-                className="w-5 h-5"
-              />
+                  src="/images/linkedin.png"
+                  alt="LinkedIn"
+                  className="w-5 h-5"
+                />
               </a>
             </div>
           </div>
@@ -97,15 +97,27 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Contact</h3>
             <div className="space-y-3">
               <a href="mailto:rakotosalamafitahiana@gmail.com" className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors">
-                <Mail className="w-5 h-5" />
+                <img
+                  src="/images/gmail.png"
+                  alt="Gmail"
+                  className="w-5 h-5"
+                />
                 <span>rakotosalamafitahiana@gmail.com</span>
               </a>
               <a href="tel:+261343172081" className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors">
-                <Phone className="w-5 h-5" />
+                <img
+                  src="/images/whatsapp.gif"
+                  alt="Whatsapp"
+                  className="w-5 h-5"
+                />
                 <span>+261 34 31 720 81</span>
               </a>
               <div className="flex items-center space-x-3 text-gray-400">
-                <MapPin className="w-5 h-5" />
+                <img
+                  src="/images/adress.png"
+                  alt="Adress"
+                  className="w-5 h-5"
+                />
                 <span>Fianarantsoa, Madagascar</span>
               </div>
             </div>
