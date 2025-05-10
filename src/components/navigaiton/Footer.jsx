@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Phone, MapPin, ChevronUp } from 'lucide-react';
+import {Mail, Phone, MapPin, ChevronUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollToSection = (e, sectionId) => {
@@ -55,14 +55,22 @@ const Footer = () => {
                 className="p-2 text-gray-400 hover:text-white rounded-lg hover:bg-gray-800 transition-all"
                 aria-label="GitHub"
               >
-                <Github className="w-5 h-5" />
+                <img
+                src="/images/github.png"
+                alt="GitHub"
+                className="w-5 h-5"
+              />
               </a>
               <a 
                 href="https://www.linkedin.com/in/fitahiana-florent-rakotosalama/" 
                 className="p-2 text-gray-400 hover:text-white rounded-lg hover:bg-gray-800 transition-all"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="w-5 h-5" />
+                <img
+                src="/images/linkedin.png"
+                alt="LinkedIn"
+                className="w-5 h-5"
+              />
               </a>
             </div>
           </div>
