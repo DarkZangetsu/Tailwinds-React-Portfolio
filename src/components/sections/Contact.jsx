@@ -1,4 +1,4 @@
-import { Mail, FileDown, Download } from "lucide-react";
+import { Mail, Download } from "lucide-react";
 
 function Contact() {
     return (
@@ -78,7 +78,11 @@ function Contact() {
                             
                             {/* Download CV */}
                             <div className="flex items-center gap-4">
-                                <FileDown className="w-6 h-6 text-purple-600" />
+                               <img
+                                    src="/images/download.png"
+                                    alt="Download"
+                                    className="w-6 h-6"
+                                />
                                 <div>
                                     <a 
                                     href="pdf/cv.pdf" 
