@@ -1,4 +1,4 @@
-import { Mail, MapPin, FileDown, Download } from "lucide-react";
+import { Mail, FileDown, Download } from "lucide-react";
 
 function Contact() {
     return (
