@@ -1,28 +1,7 @@
-import { Code, Monitor, Server, Layout, DatabaseIcon } from "lucide-react";
+import { Code, Layout, DatabaseIcon } from "lucide-react";
 
 function Skills() {
     const skillCategories = [
-        {
-            name: 'Front-end',
-            icon: <Monitor className="w-6 h-6 text-blue-400" />,
-            skills: [
-                { name: 'HTML5', icon: "images/skills/html.png" },
-                { name: 'CSS3', icon: "images/skills/css.png" },
-                { name: 'JavaScript', icon: "images/skills/js.png" },
-                { name: 'React.js', icon: "images/skills/react.png" },
-                { name: 'TypeScript', icon: "images/skills/typescript.png" }
-            ]
-        },
-        {
-            name: 'Back-end',
-            icon: <Server className="w-6 h-6 text-green-400" />,
-            skills: [
-                { name: 'Python', icon: "/images/skills/python.png" },
-                { name: 'Java', icon: "images/skills/java.png" },
-                { name: 'PHP', icon: "images/skills/php.png" },
-                { name: 'Node.js', icon: "images/skills/node.png" }
-            ]
-        },
         {
             name: 'Frameworks',
             icon: <Layout className="w-6 h-6 text-purple-400" />,

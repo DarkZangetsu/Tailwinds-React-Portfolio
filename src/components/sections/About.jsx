@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { User } from "lucide-react";
 
 function About() {
@@ -13,18 +14,13 @@ function About() {
                                 <h2 className="text-4xl font-bold">About Me</h2>
                             </div>
                             <p className="text-lg text-gray-300 leading-relaxed">
-                                I am a developer passionate about creating comprehensive and innovative technological solutions. My versatile background has allowed me to acquire deep expertise in developing applications for various platforms.
+                                I'm a passionate developer who loves turning ideas into simple, useful, and scalable apps. I care about both how things work and how they feel to use.
                             </p>
                             <p className="text-lg text-gray-300 leading-relaxed">
-                                What sets me apart is my ability to understand user needs and transform them into intuitive and high-performing digital experiences. I approach each project with a holistic perspective, ensuring harmony between the user interface and technical functionality.
-                            </p>
-                            <p className="text-lg text-gray-300 leading-relaxed">
-                                I constantly stay on the lookout for new technologies and methodologies to improve my skills. My goal is to create applications that not only meet current needs but are also scalable to adapt to future requirements.
-                            </p>
-                            <p className="text-lg text-gray-300 leading-relaxed">
-                                Beyond coding, I enjoy collaborating with multidisciplinary teams where knowledge sharing and collective creativity can give rise to exceptional projects.
+                                I stay curious, keep learning, and enjoy working with others to build great things together.
                             </p>
                         </div>
+
                         <div className="relative group">
                             <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000"></div>
                             <div className="relative aspect-square rounded-lg overflow-hidden bg-gray-900">
