@@ -1,21 +1,20 @@
-import { ChevronDown, Download } from "lucide-react";
+import { ChevronDown, Download} from "lucide-react";
 
 function Hero() {
-
     const scrollToProjects = () => {
         const section = document.getElementById('projects');
         if (section) {
           section.scrollIntoView({ behavior: 'smooth' });
         }
-      };
-
+    };
 
     const scrollToContact = () => {
         const section = document.getElementById('contact'); 
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
         }
-    } 
+    }
+    
     return (
         <div>
             {/* Hero Section */}
@@ -34,6 +33,35 @@ function Hero() {
                             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">
                                 Specialized in creating modern and innovative web and mobile applications
                             </p>
+                            
+                            {/* Social Media Icons */}
+                            <div className="flex items-center justify-center md:justify-start gap-4 mb-8">
+                                <a 
+                                    href="https://github.com/DarkZangetsu" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="group transition-transform hover:scale-110"
+                                >
+                                    <img 
+                                        src="/images/github.png" 
+                                        alt="GitHub" 
+                                        className="w-10 h-10"
+                                    />
+                                </a>
+                                <a 
+                                    href="https://www.linkedin.com/in/fitahiana-florent-rakotosalama/" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="group transition-transform hover:scale-110"
+                                >
+                                    <img 
+                                        src="/images/linkedin.png" 
+                                        alt="LinkedIn" 
+                                        className="w-10 h-10"
+                                    />
+                                </a>
+                            </div>
+                            
                             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                                 <button className="group px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg transition-all duration-300 flex items-center gap-2" onClick={scrollToProjects}>
                                     View my projects
