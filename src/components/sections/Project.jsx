@@ -234,7 +234,7 @@ function Project() {
                <img
                 src="/images/github.png"
                 alt="GitHub"
-                className="w-6 h-6"
+                className="w-6 h-6 mr-2"
               />
               Visit my GitHub for more projects
             </a>
