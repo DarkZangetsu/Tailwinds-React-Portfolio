@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, FileDown, Download } from "lucide-react";
+import { Mail, MapPin, FileDown, Download } from "lucide-react";
 
 function Contact() {
     return (
@@ -13,7 +13,11 @@ function Contact() {
                         <div className="space-y-6">
                             {/* Email */}
                             <div className="flex items-center gap-4">
-                                <Mail className="w-6 h-6 text-blue-400" />
+                                <img
+                                    src="/images/gmail.png"
+                                    alt="Gmail"
+                                    className="w-6 h-6"
+                                />
                                 <div>
                                     <h3 className="text-lg font-medium">Email</h3>
                                     <a href="mailto:rakotosalamafitahiana@gmail.com" className="text-blue-400">
@@ -24,7 +28,11 @@ function Contact() {
                             
                             {/* Phone */}
                             <div className="flex items-center gap-4">
-                                <Phone className="w-6 h-6 text-green-400" />
+                                 <img
+                                    src="/images/whatsapp.gif"
+                                    alt="Whatsapp"
+                                    className="w-6 h-6"
+                                />
                                 <div>
                                     <h3 className="text-lg font-medium">Phone</h3>
                                     <a href="tel:+261343172081" className="text-green-400">
@@ -35,7 +43,11 @@ function Contact() {
                             
                             {/* Address */}
                             <div className="flex items-center gap-4">
-                                <MapPin className="w-6 h-6 text-purple-400" />
+                                <img
+                                    src="/images/adress.png"
+                                    alt="Adress"
+                                    className="w-6 h-6"
+                                />
                                 <div>
                                     <h3 className="text-lg font-medium">Address</h3>
                                     <p className="text-gray-300">
@@ -46,7 +58,11 @@ function Contact() {
                             
                             {/* LinkedIn */}
                             <div className="flex items-center gap-4">
-                                <Linkedin className="w-6 h-6 text-blue-400" />
+                                 <img
+                                    src="/images/linkedin.png"
+                                    alt="LinkedIn"
+                                    className="w-6 h-6"
+                                />
                                 <div>
                                     <h3 className="text-lg font-medium">LinkedIn</h3>
                                     <a 
