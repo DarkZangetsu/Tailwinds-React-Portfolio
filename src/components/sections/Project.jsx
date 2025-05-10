@@ -1,4 +1,4 @@
-import { Briefcase, ExternalLink, Smartphone, Globe, Server, Database } from "lucide-react";
+import { Briefcase, ExternalLink, Smartphone, Globe, Server, Database} from "lucide-react";
 import { useState } from "react";
 
 function Project() {
@@ -29,7 +29,6 @@ function Project() {
       tags: ["Django", "React Vite", "Tailwind CSS", "GraphQL", "API Integration"],
       type: ["web", "frontend", "backend"],
     },
-    
     {
       id: 8,
       title: "Stream Youjo Senki",
@@ -169,10 +168,10 @@ function Project() {
             {filteredProjects.map((project) => (
               <div
                 key={project.id}
-                className="group relative bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 shadow-lg"
+                className="group relative bg-gray-800 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-300 shadow-lg h-full flex flex-col"
               >
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900 opacity-0 group-hover:opacity-70 transition-opacity z-10"></div>
-                <div className="h-48 overflow-hidden">
+                <div className="h-48 overflow-hidden flex-shrink-0">
                   <img 
                     src={getImagePath(project.image)} 
                     alt={project.title} 
@@ -183,12 +182,12 @@ function Project() {
                     }}
                   />
                 </div>
-                <div className="p-6 relative z-20">
+                <div className="p-6 relative z-20 flex flex-col flex-grow">
                   <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-xl font-bold text-white">{project.title}</h3>
+                    <h3 className="text-xl font-bold text-white line-clamp-2">{project.title}</h3>
                     {getProjectIcon(project.type)}
                   </div>
-                  <p className="text-gray-300 mb-4">{project.description}</p>
+                  <p className="text-gray-300 mb-4 line-clamp-3">{project.description}</p>
                   
                   {/* Type badges */}
                   <div className="flex gap-2 flex-wrap mb-3">
@@ -204,22 +203,41 @@ function Project() {
                     ))}
                   </div>
                   
-                  {/* Conditional rendering of the link */}
-                  {project.link && (
-                    <div className="flex justify-between items-center">
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-2"
-                      >
-                        See more <ExternalLink className="w-4 h-4" />
-                      </a>
-                    </div>
-                  )}
+                  <div className="mt-auto pt-2">
+                    {/* Conditional rendering of the link */}
+                    {project.link && (
+                      <div className="flex justify-between items-center">
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-2"
+                        >
+                          See more <ExternalLink className="w-4 h-4" />
+                        </a>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* GitHub Link */}
+          <div className="mt-16 text-center">
+            <a 
+              href="https://github.com/DarkZangetsu" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors text-white"
+            >
+               <img
+                src="/images/github.png"
+                alt="GitHub"
+                className="w-6 h-6"
+              />
+              Visit my GitHub for more projects
+            </a>
           </div>
         </div>
       </section>
