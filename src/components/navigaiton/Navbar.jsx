@@ -59,8 +59,8 @@ const Navbar = ({ activeSection }) => {
                 scrollToSection('#home');
               }}
               className={`font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 ${isScrolled
-                ? 'text-lg md:text-2xl' // Reduced size in mobile mode when scrolling
-                : 'text-xl md:text-2xl'
+                ? 'text-base md:text-2xl' // Further reduced size for mobile
+                : 'text-lg md:text-2xl'
                 }`}
             >
               Fitahiana Florent
