@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Code, Layout, Database, ChevronRight } from "lucide-react";
+import { Code, Layout, Database, ChevronRight, Server } from "lucide-react";
 
 function Skills() {
     const [activeCategory, setActiveCategory] = useState(0);
@@ -26,6 +26,36 @@ function Skills() {
                 { name: 'SQL Server', icon: "images/skills/sqlserver.png" },
                 { name: 'PostgreSQL', icon: "images/skills/postgresql.png" },
                 { name: 'Supabase', icon: "images/skills/supabase.png" }
+            ]
+        },
+        {
+            name: 'DevOps',
+            icon: <Server className="w-6 h-6 text-green-400" />,
+            description: "DevOps tools and practices for continuous integration and deployment",
+            skills: [
+                { name: 'Docker', icon: "images/skills/docker.png" },
+                { name: 'Kubernetes', icon: "images/skills/kubernetes.png" },
+                { name: 'Jenkins', icon: "images/skills/jenkins.png" },
+                { name: 'Azure DevOps', icon: "images/skills/azure-devops.png" }
+            ]
+        },
+        {
+            name: 'Agile',
+            icon: <Layout className="w-6 h-6 text-orange-400" />,
+            description: "Agile methodologies and frameworks for efficient project management",
+            skills: [
+                { name: 'Scrum', icon: "images/skills/scrum.png" },
+                { name: 'Agile', icon: "images/skills/agile.png" },
+            ]
+        },
+        {
+            name: 'APIs',
+            icon: <Code className="w-6 h-6 text-cyan-400" />,
+            description: "API technologies and standards for building robust web services",
+            skills: [
+                { name: 'REST API', icon: "images/skills/rest-api.png" },
+                { name: 'GraphQL', icon: "images/skills/graphql.png" },
+                { name: 'Postman', icon: "images/skills/postman.png" }
             ]
         },
     ];
